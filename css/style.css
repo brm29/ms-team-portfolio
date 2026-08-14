@@ -1,0 +1,186 @@
+/* Colours */
+:root {
+    --primary: #4da6ff;
+    --secondary: #0a1f44;
+    --light-bg: #f5f9ff;
+    --white: #ffffff;
+    --text-dark: #1a1a1a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    background-color: var(--light-bg);
+    line-height: 1.5;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header  */
+.site-header {
+    background-color: var(--secondary);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.header-title {
+    font-size: 2rem;
+}
+
+.header-slogan {
+    color: var(--primary);
+    margin-top: 5px;
+}
+
+/* Intro Section  */
+.intro {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.intro-heading {
+    color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+.intro-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Card Grid */
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    color: var(--text-dark);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-photo {
+    width: 100%;
+    display: block;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-name {
+    color: var(--secondary);
+}
+
+.card-role {
+    color: #555;
+    margin: 5px 0;
+}
+
+.card-cta {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+/* Cards in a row on larger screens */
+@media (min-width: 700px) {
+    .card-grid {
+        flex-direction: row;
+    }
+
+    .card {
+        flex: 1;
+    }
+}
+
+/* Member Page */
+.member-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--secondary);
+}
+
+.member-photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.member-name {
+    color: var(--secondary);
+}
+
+.member-bio {
+    margin: 15px 0;
+}
+
+.section-title {
+    color: var(--primary);
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.skills-list,
+.hobbies-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li,
+.hobbies-list li {
+    background-color: var(--white);
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--secondary);
+    color: var(--white);
+}
