@@ -1,0 +1,47 @@
+.profile-card {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile-card .card-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    object-position: top;
+}
+.profile-card .card-name {
+    font-size: 26px;
+    color: #0a1f44;
+    margin-bottom: 5px;
+}
+.profile-card .card-role {
+    color: #4a90e2;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.profile-bio {
+    background-color: #f5f8fc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.profile-subheading {
+    color: #0a1f44;
+    margin-bottom: 10px;
+}
+.tag-pill {
+    display: inline-block;
+    background-color: #0a1f44;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 15px;
+    margin: 5px;
+    font-size: 14px; 
+}
